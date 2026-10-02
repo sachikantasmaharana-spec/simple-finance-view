@@ -6,6 +6,7 @@ export default function FilterBar({
   onSearch,
   selectedType,
   onFilterChange,
+  onClearFilters,
 }) {
   return (
     <div className="filter-bar">
@@ -42,6 +43,14 @@ export default function FilterBar({
           ))}
         </div>
       </div>
+
+      <button
+        className="filter-bar__clear"
+        type="button"
+        onClick={onClearFilters}
+      >
+        Clear filters
+      </button>
     </div>
   );
 }
