@@ -28,6 +28,10 @@ export default function App() {
         onSearch={setSearchText}
         selectedType={selectedType}
         onFilterChange={setSelectedType}
+        onClearFilters={() => {
+          setSearchText("");
+          setSelectedType("All");
+        }}
       />
 
       <div className="finance__cards">

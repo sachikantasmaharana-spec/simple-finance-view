@@ -101,6 +101,25 @@
   height: 1rem;
 }
 
+.filter-bar__clear {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--navy-800);
+  background: var(--white);
+  font: inherit;
+  cursor: pointer;
+}
+
+.filter-bar__clear:hover {
+  background: var(--navy-50);
+}
+
+.filter-bar__clear:focus-visible {
+  outline: 2px solid var(--navy-600);
+  outline-offset: 2px;
+}
+
 /* ---------- Summary cards ---------- */
 
 .finance__cards {
